@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script type="text/javascript" src="./js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="./js/retrieveData.js"></script>
+        <script type="text/javascript" src="./js/libs/jquery-easyui-1.4.2/jquery.easyui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/color.css">
+        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
+    </head>
+    <body>
+        <h1 id="time"></h1>
+       <table>
+           <tr>
+           <td>
+         <table id="onDemandInstanceTypeSpread" class="easyui-datagrid" title="OnDemand Instances: Price Spread by Instance Type (USD currency)" style="width:500px;height:350px"
+            data-options="singleSelect:true,collapsible:true, fitColumns:true">
+        </table>
+           </td>
+           <td>
+        <table id="onDemandRegionTypeSpread" class="easyui-datagrid" title="OnDemand Instances: Price Spread by Region (USD currency)" style="width:500px;height:350px"
+            data-options="singleSelect:true,collapsible:true, fitColumns:true">
+        </table>
+           </td>
+           </tr>
+           <tr>
+           <td>
+              <table id="spotInstanceTypeSpread" class="easyui-datagrid" title="Spot Instances: Price Spread by Instance Type (USD currency)" style="width:500px;height:350px"
+                     data-options="singleSelect:true,collapsible:true, fitColumns:true">
+              </table> 
+           </td>
+           <td>
+               <table id="spotRegionSpread" class="easyui-datagrid" title="Spot Instances: Price Spread by Region (USD currency)" style="width:500px;height:350px"
+                     data-options="singleSelect:true,collapsible:true, fitColumns:true">
+              </table>  
+           </td>
+           </tr>
+           <tr>
+           <td>
+              <table id="topOdTenInstancesPerVcpu" class="easyui-datagrid" title="Top Ten OnDemand Instancess Per Vcpu (USD currency)" style="width:500px;height:350px"
+                     data-options="singleSelect:true,collapsible:true, fitColumns:true">
+              </table> 
+           </td>
+           <td>
+               <table id="cheapestRegionOverall" class="easyui-datagrid" title="Cheapest Region Overall (USD currency)" style="width:500px;height:350px"
+                     data-options="singleSelect:true,collapsible:true, fitColumns:true">
+              </table>  
+           </td>
+           </tr>
+      </table>
+    </body>
+</html>
